@@ -1,0 +1,30 @@
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  
+	<listener>
+		<listener-class>com.sk.MyServletListner</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>MyServlet1</servlet-name>
+		<display-name>MyServlet1</display-name>
+		<description></description>
+		<servlet-class>com.sk.MyServlet</servlet-class>
+		<init-param>
+		<param-name>name</param-name>
+		<param-value>Anuradha</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MyServlet1</servlet-name>
+		<url-pattern>/MyServlet</url-pattern>
+	</servlet-mapping>
+	<context-param>
+	<param-name>Address</param-name>
+	<param-value>Pune</param-value>
+	</context-param>
+	
+	
+</web-app>

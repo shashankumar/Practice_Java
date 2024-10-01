@@ -1,0 +1,47 @@
+
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+  <param-name>contxt</param-name>
+  <param-value>9999</param-value>
+  </context-param>
+  <servlet>
+   <init-param>
+  	<param-name>id</param-name>
+  	<param-value>100</param-value>
+  	</init-param>
+  	<init-param>
+  	<param-name>name</param-name>
+  	<param-value>Shashank</param-value>
+  	</init-param>
+  	<init-param>
+  	<param-name>class</param-name>
+  	<param-value>MCA</param-value>
+  	</init-param>
+  	<servlet-name>Student</servlet-name>
+  	<display-name>Student</display-name>
+  	
+  	<description></description>
+  	<servlet-class>com.sk.Student</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Teachers</servlet-name>
+  	<display-name>Teachers</display-name>
+  	<description></description>
+  	<servlet-class>com.sk.Teachers</servlet-class>
+  	<init-param>
+  		<param-name>tid</param-name>
+  		<param-value>1212</param-value>
+  		<description>Teache's ID</description>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Student</servlet-name>
+  	<url-pattern>/Student</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Teachers</servlet-name>
+  	<url-pattern>/Teachers</url-pattern>
+  </servlet-mapping>
+</web-app>
